@@ -159,7 +159,7 @@
   background: linear-gradient(180deg, rgb(180, 14, 109) 0%, rgb(66, 12, 100) 100%);
 }
 
-.frame .text-wrapper {
+.frame .button {
   position: absolute;
   width: 274px;
   height: 41px;
@@ -174,7 +174,7 @@
   line-height: normal;
 }
 
-.frame .text-wrapper-2 {
+.frame .button2 {
   position: absolute;
   width: 360px;
   height: 41px;
@@ -189,7 +189,7 @@
   line-height: normal;
 }
 
-.frame .text-wrapper-3 {
+.frame .button3 {
   position: absolute;
   width: 287px;
   height: 39px;
