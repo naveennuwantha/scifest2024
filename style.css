@@ -124,6 +124,7 @@
   height: 378px;
   top: 105px;
   left: 30px;
+  border-radius: 5%; 
   object-fit: cover;
 }
 
