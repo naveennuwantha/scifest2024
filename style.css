@@ -126,6 +126,12 @@
   left: 30px;
   border-radius: 5%; 
   object-fit: cover;
+
+    box-shadow: 0 0 0 1px #B40E6D, /* Pink stroke */
+  0 0 0 1px #420C64; /* Purple stroke */
+
+/* Optional: Additional shadow for depth */
+box-shadow: 0 0 0 1px #B40E6D, 0 0 0 1px #420C64, 0 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 
