@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="frame">
+      <div class="overlap-wrapper">
+        <div class="overlap">
+          <div class="rectangle"></div>
+          <div class="time" id="realTime"></div> <!-- Updated time div with id -->
+          <div class="battery">
+            <div class="overlap-group">
+              <div class="border"></div>
+              <div class="capacity"></div>
+            </div>
+            <img class="cap" src="img/cap.svg" />
+          </div>
+          <img class="wifi" src="img/wifi.svg" />
+          <img class="cellular-connection" src="img/cellular-connection.svg" />
+          <div class="home-indicator"></div>
+          
+          <!-- Updated image source with the provided URL -->
+          <img class="whatsapp-image" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiuJZtBGcNhZ3oANzBdCOEqgK6NZKa7SplplrGqTnPTZeKFiOWQ8TpKJkdBQ5Ss52yzPTydwuCnFYO-aMvDJKAUO27lRJhvcKpfMMkb-JbUNfvKfMVkkmlK6aYytAGddBaoE_chpk2DiHKAXd-MSmLR8YEEVT8C14ebvx4HxY3mxsF0Ul_XGdxQA6zhYXMH/s320/Wallpaper.png" />
+          
+          <div class="div"></div>
+          <div class="rectangle-2"></div>
+          <div class="rectangle-3"></div>
+          <div class="button-container">
+            <a href="C:\Users\Naveen Nuwantha\Desktop\Sci Fest 2024\Quiz Competition\Winners\WINNER.html" class="button">WINNER</a>
+            <a href="C:\Users\Naveen Nuwantha\Desktop\Sci Fest 2024\Quiz Competition\Winners\1ST RUNNER UP.html" class="button3">1ST RUNNER UP</a>
+            <a href="C:\Users\Naveen Nuwantha\Desktop\Sci Fest 2024\Quiz Competition\Winners\2ND RUNNER UP.html" class="button2">2ND RUNNER UP</a>
+          </div>
+          <div class="iphone-pro">
+            <img class="space-black" src="img/space-black.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript for real-time clock -->
+    <script>
+      function updateClock() {
+        const now = new Date();
+        let hours = now.getHours();
+        const minutes = String(now.getMinutes()).padStart(2, '0');
+
+        // Convert to 12-hour format without AM/PM
+        hours = hours % 12;
+        hours = hours || 12; // the hour '0' should be '12'
+        const formattedHours = String(hours).padStart(2, '0');
+
+        const currentTime = `${formattedHours}:${minutes}`;
+        document.getElementById('realTime').textContent = currentTime;
+      }
+
+      setInterval(updateClock, 1000); // Update the time every second
+      updateClock(); // Initial call to display the time immediately
+    </script>
+  </body>
+</html>
