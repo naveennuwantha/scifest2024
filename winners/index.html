@@ -1,1 +1,41 @@
-Hi
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>200k Subscribers Celebration</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="main_header">
+    <div class="center_div">
+      <!-- Adding the image -->
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDZJdWN38oSgfj-u1fx1DA71sks8rop8DQ7-4as61AKgBTrDWZUnAHexx8UcJTtv43CEbj6hJOLj8eWzff1EZtaTUFG0vmTqQ1louhNtmWTjK5SgKUAcoYdHsIilvak1WuczUbTdSB_AcaRNWi_VuxcCoG8vTtVRZXqspM8WJpaQ4sgGYvouTG0gS6usjW/s320/436764237_738063545142910_5807946588886916960_n.jpg" alt="Celebration" />
+      
+      <!-- Text below the image -->
+      <!-- <p> -->
+        <!-- We are near to 200k Subs
+        <br />
+        🎂I love you all!🎂
+      </p> -->
+    </div>
+  </div>
+
+  <!-- Include the confetti library -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  <script>
+    const startit = () => {
+      setTimeout(function () {
+        console.log("start");
+        confetti({
+          particleCount: 100,
+          spread: 70,
+          origin: { y: 0.6 }
+        });
+      }, 1000);
+    };
+
+    startit();
+  </script>
+</body>
+</html>
