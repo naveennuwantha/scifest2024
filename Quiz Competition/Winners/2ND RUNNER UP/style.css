@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kristi", cursive;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.main_header {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(180deg, rgba(180, 14, 109, 0.5) 0%, rgba(66, 12, 100, 0.5) 100%);
+  display: grid;
+  place-items: center;
+}
+
+.center_div {
+  min-width: 50vw;
+  height: 40vh;
+  color: #000;
+  text-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
+  font-size: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  text-align: center;
+}
+
+img {
+  width: 600px; /* Set fixed width */
+  height: 600px; /* Set fixed height */
+  object-fit: cover; /* Ensure the image covers the dimensions */
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  html {
+      font-size: 35%;
+  }
+
+  img {
+      width: 100%; /* Responsive width on smaller screens */
+      height: auto; /* Maintain aspect ratio */
+  }
+}

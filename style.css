@@ -1,15 +1,21 @@
 .frame {
-  background-color: #ffffff;
+  background: linear-gradient(180deg, rgba(180, 14, 109, 0.5) 0%, rgba(66, 12, 100, 0.5) 100%);
   display: flex;
-  flex-direction: row;
   justify-content: center;
+  align-items: center; /* Center items vertically */
   width: 100%;
+  height: 100vh; /* Ensure full viewport height */
+  position: relative; /* Ensure children are positioned relative to this container */
 }
 
 .frame .overlap-wrapper {
-  background-color: #ffffff;
   width: 446px;
   height: 900px;
+  position: relative; /* Ensure overlap position is relative to this container */
+  z-index: 1; /* Ensure this element is above the background */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center items vertically within this container */
 }
 
 .frame .overlap {
@@ -127,13 +133,12 @@
   border-radius: 5%; 
   object-fit: cover;
 
-    box-shadow: 0 0 0 1px #B40E6D, /* Pink stroke */
-  0 0 0 1px #420C64; /* Purple stroke */
+  box-shadow: 0 0 0 1px #B40E6D, /* Pink stroke */
+    0 0 0 1px #420C64; /* Purple stroke */
 
-/* Optional: Additional shadow for depth */
-box-shadow: 0 0 0 1px #B40E6D, 0 0 0 1px #420C64, 0 1px 1px rgba(0, 0, 0, 0.1);
+  /* Optional: Additional shadow for depth */
+  box-shadow: 0 0 0 1px #B40E6D, 0 0 0 1px #420C64, 0 1px 1px rgba(0, 0, 0, 0.1);
 }
-
 
 .frame .div {
   position: absolute;
@@ -180,15 +185,12 @@ box-shadow: 0 0 0 1px #B40E6D, 0 0 0 1px #420C64, 0 1px 1px rgba(0, 0, 0, 0.1);
   text-align: center;
   letter-spacing: 0;
   line-height: normal;
-      }
+}
 
-      
-  
-        /* Ensure the buttons appear in the intended area */
-        .button-container {
-          position: relative;
-          z-index: 1; /* Ensure buttons are on top of overlapping elements */
-        }
+.button-container {
+  position: relative;
+  z-index: 1;
+}
 
 .frame .button2 {
   position: absolute;

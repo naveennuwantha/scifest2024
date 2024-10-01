@@ -1,15 +1,21 @@
 .frame {
-  background-color: #ffffff;
+  background: linear-gradient(180deg, rgba(180, 14, 109, 0.5) 0%, rgba(66, 12, 100, 0.5) 100%);
   display: flex;
-  flex-direction: row;
   justify-content: center;
+  align-items: center; /* Center items vertically */
   width: 100%;
+  height: 100vh; /* Ensure full viewport height */
+  position: relative; /* Ensure children are positioned relative to this container */
 }
 
 .frame .overlap-wrapper {
-  background-color: #ffffff;
   width: 446px;
   height: 900px;
+  position: relative; /* Ensure overlap position is relative to this container */
+  z-index: 1; /* Ensure this element is above the background */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center items vertically within this container */
 }
 
 .frame .overlap {

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SCI FEST 2024</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="main_header">
+    <div class="center_div">
+      <!-- Adding the image -->
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFfXvHbCVEKF_yjr7yuZstIi1Rr7DQHnxtv8lMk9luAEU4AcGJM9QZQM2TMEk2JUrCIHPWnjgEhbVKft9bCtrKU6aGe_QAwC9ibzxiAWMQyeny_0S1b_7SqaV2pLqqlgXwkLrO-Pn2DIdzSjUn60OjvOch0Z98EKDev9yqSHC9XxJkIt-KdSWHr0bWqQt1/s320/WhatsApp%20Image%202024-09-21%20at%208.49.17%20PM.jpeg" alt="Celebration" />
+      
+     
+    </div>
+  </div>
+
+  <!-- Include the confetti library -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  <script>
+    const startit = () => {
+      setTimeout(function () {
+        console.log("start");
+        confetti({
+          particleCount: 100,
+          spread: 70,
+          origin: { y: 0.6 }
+        });
+      }, 1000);
+    };
+
+    startit();
+  </script>
+</body>
+</html>
